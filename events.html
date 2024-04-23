@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Calendar</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <a class="navbar-brand" href="index.html">Student Portal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blogs.html">Student Blogs</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="events.html">Event Calendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="jobs.html">Job Opportunities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Event Calendar</h1>
+        <p>Keep track of all important academic and extracurricular dates. Don't miss out on any events!</p>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td class="event" data-toggle="tooltip" data-placement="top" title="Guest Lecture: Emerging Tech Trends">3</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="event" data-toggle="tooltip" data-placement="top" title="Career Fair: Meet Your Future Employers">7</td>
+                        <td>8</td>
+                        <td class="event" data-toggle="tooltip" data-placement="top" title="Workshop: Resume Writing Skills">9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td class="event" data-toggle="tooltip" data-placement="top" title="Guest Lecture: Emerging Tech Trends">17</td>
+                        <td>18</td>
+                        <td>19</td>
+                 
+                    </tr>
+                     <tr>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td  class="event" data-toggle="tooltip" data-placement="top" title="Guest Lecture: Emerging Tech Trends">26</td>
+                     </tr>
+                        <tr>
+                        <td>27</td>
+                        <td>28</td>
+                        <td  class="event" data-toggle="tooltip" data-placement="top" title="Guest Lecture: Emerging Tech Trends">29</td>
+                        <td>30</td>
+                        <td  class="event" data-toggle="tooltip" data-placement="top" title="Guest Lecture: Emerging Tech Trends">31</td>
+                        </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer class="bg-danger text-white">
+            <p class="text-center">© 2024 Student Life Portal</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip(); // Initialize all tooltips on the page
+        });
+    </script>
+</body>
+</html>

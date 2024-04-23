@@ -1,0 +1,172 @@
+/* General body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 60px; /* Space for fixed footer */
+}
+
+/* Header styles */
+header {
+    background: #0056b3;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation bar styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #007bff;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #0056b3;
+}
+
+/* Main content area */
+.container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel */
+.carousel-item img {
+    width: 100%;
+    height: 500px; /* Fixed height for all images */
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* Footer styles */
+footer {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+/* Event Calendar styles */
+.table-responsive {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.event {
+    cursor: pointer;
+    background-color: #cce5ff; /* Light blue background for event days */
+}
+
+.event:hover {
+    background-color: #b8daff;
+}
+
+/* Tooltip styles for Bootstrap Tooltips */
+.tooltip-inner {
+    background-color: #007bff; /* Tooltip background color */
+    color: #ffffff; /* Tooltip text color */
+    border: 1px solid #0069d9; /* Optional: add border to tooltip */
+}
+
+.tooltip.bs-tooltip-top .arrow::before {
+    border-top-color: #007bff;
+}
+
+.tooltip.bs-tooltip-bottom .arrow::before {
+    border-bottom-color: #007bff;
+}
+
+/* Marketing sections */
+.row div {
+    margin-top: 20px;
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.btn-secondary {
+    background-color: #0069d9;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    body {
+        padding-bottom: 100px; /* Increased padding for mobile to account for the stacked navbar */
+    }
+}
+/* Carousel Image Styling */
+/* Ensuring the carousel has a consistent height */
+.carousel-item {
+    height: 300px;
+    /* Adjust this height based on your design preference */
+    overflow: hidden;
+    /* Ensures nothing extends outside this container */
+}
+
+.carousel-item img {
+    width: 700%;
+    height: 300px; 
+    object-fit: contain;
+    object-position: center;
+}
+

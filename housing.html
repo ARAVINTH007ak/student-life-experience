@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing and Accommodation</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        /* Additional custom styles */
+        .housing-option {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            transition: box-shadow 0.3s;
+        }
+        .housing-option:hover {
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <a class="navbar-brand" href="index.html">Student Portal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blogs.html">Student Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="health.html">Health</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Event Calendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="jobs.html">Job Opportunities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="housing.html">Housing and Accommodation </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Housing and Accommodation</h1>
+        <p>Find information about on-campus and nearby off-campus housing options.</p>
+
+
+        <div id="housingGallery" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#housingGallery" data-slide-to="0" class="active"></li>
+                <li data-target="#housingGallery" data-slide-to="1"></li>
+                <li data-target="#housingGallery" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="p1.jpg" alt="Housing Facilities 1" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="p2.jpeg" alt="Housing Facilities 2" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="p3.jpeg" alt="Housing Facilities 3" class="d-block w-100">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#housingGallery" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#housingGallery" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+
+        <!-- Housing Options Details -->
+        <div class="row mt-4">
+            <div class="col-md-4 housing-option">
+                <h4>On-Campus Dorms</h4>
+                <p>Conveniently located within walking distance to all campus facilities.</p>
+            </div>
+            <div class="col-md-4 housing-option">
+                <h4>Off-Campus Apartments</h4>
+                <p>Affordable options located in vibrant neighborhoods close to campus.</p>
+            </div>
+            <div class="col-md-4 housing-option">
+                <h4>Private Rentals</h4>
+                <p>Explore a variety of private rental options suited to different budgets and preferences.</p>
+            </div>
+        </div>
+
+        <!-- FAQs -->
+        <div class="mt-5">
+            <h2>FAQs about Student Housing</h2>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is the application process for on-campus housing?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Application processes vary by campus, but typically require an application form, a deposit, and proof of student status.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-danger text-white">
+       
+        <p class="text-center">© 2024 Student Life Portal</p>
+    
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
